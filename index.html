@@ -24,8 +24,68 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section
+					data-markdown
+					data-background-image="https://images-na.ssl-images-amazon.com/images/S/sgp-catalog-images/region_US/wb-888574460181-Full-Image_GalleryBackground-en-US-1494021254054._RI_SX940_.jpg">
+					# React vs Vue
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+
+## Criteria
+
+- State management <!-- .element: class="fragment" data-fragment-index="1" -->
+- Accessible to volunteers <!-- .element: class="fragment" data-fragment-index="2" -->
+- Cleaner, testable code <!-- .element: class="fragment" data-fragment-index="3" -->
+
+					</script>
+				</section>
+				<section>
+					<section data-markdown>
+						## State Management
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							## What do we need to keep track of?
+
+							### Here are a few things
+
+							- Zoom level of code
+							- Is code running
+							- Is level completed
+							- Active screen (single-page routing)
+							- Toggles (console log, code hints, sound...)
+							- Player data (current health, score)
+						</script>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						## Accessibiliity to Volunteers
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							- Reasonable learning curve <!-- .element: class="fragment" data-fragment-index="1" -->
+							- Something volunteers will want to learn <!-- .element: class="fragment" data-fragment-index="2" -->
+							- Well documented <!-- .element: class="fragment" data-fragment-index="3" -->
+							- Strong community <!-- .element: class="fragment" data-fragment-index="4" -->
+						</script>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						## Cleaner, testable code
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							- Easy to unit test <!-- .element: class="fragment" data-fragment-index="1" -->
+							- Low amount of boilerplate <!-- .element: class="fragment" data-fragment-index="2" -->
+							- Readable <!-- .element: class="fragment" data-fragment-index="3" -->
+							- Easy to debug <!-- .element: class="fragment" data-fragment-index="4" -->
+						</script>
+					</section>
+				</section>
 			</div>
 		</div>
 
@@ -37,6 +97,7 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
+				history: true,
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
