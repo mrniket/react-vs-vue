@@ -169,6 +169,7 @@
 					<section data-markdown>
 						## Cleaner, testable code
 					</section>
+
 					<section data-markdown>
 						<script type="text/template">
 							- Easy to unit test <!-- .element: class="fragment" data-fragment-index="1" -->
@@ -176,6 +177,70 @@
 							- Readable <!-- .element: class="fragment" data-fragment-index="3" -->
 							- Easy to debug <!-- .element: class="fragment" data-fragment-index="4" -->
 						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							## Vue Unit Testing
+							It's difficult to set up and unit test Vue. Because of its: <!-- .element: class="fragment" data-fragment-index="1" -->
+							- webpack configuration (especially if custom, such as when using a CLI) <!-- .element: class="fragment" data-fragment-index="2" -->
+							- dependancy injection (using ES6) <!-- .element: class="fragment" data-fragment-index="3" -->
+							- lack of information online <!-- .element: class="fragment" data-fragment-index="4" -->
+
+							There are many packages trying to overcome this on GitHub, but are <!-- .element: class="fragment" data-fragment-index="5" -->
+							still in the very early stages and they don't do it well.
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							## React Unit Testing  <!-- .element: class="fragment" data-fragment-index="1" -->
+							React on the other hand: <!-- .element: class="fragment" data-fragment-index="1" -->
+							- has a lot of mature testing libraries, such as <!-- .element: class="fragment" data-fragment-index="3" -->  <font color="gold">Enzyme</font> <!-- .element: class="fragment" data-fragment-index="3" --> or <!-- .element: class="fragment" data-fragment-index="3" --> <font color="gold">Jest</font> <!-- .element: class="fragment" data-fragment-index="2" -->
+							- 'acceptance' testing is easy against a real DOM <!-- .element: class="fragment" data-fragment-index="4" -->
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							## Boilerplates
+							Both have boilerplates ready to use. React has: <!-- .element: class="fragment" data-fragment-index="1" -->
+							- react-boilerplate <!-- .element: class="fragment" data-fragment-index="2" -->
+
+							And from Vue: <!-- .element: class="fragment" data-fragment-index="3" -->
+							- vue-simple-boilerplate, webpack, webpack-simple, browserify, etc. <!-- .element: class="fragment" data-fragment-index="4" -->
+
+							There can be less boilerplating in Vue... <!-- .element: class="fragment" data-fragment-index="4" -->
+
+							But it seems to have a massive effect on Vue's testing <!-- .element: class="fragment" data-fragment-index="5" -->
+							capability , while it doesn't affect React.
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							## Readability
+							<table>
+								<tr>
+									<th style="text-align: center">React</th>
+									<th style="text-align: center">Vue</th>
+								</tr>
+								<tr>
+									<td>JSX always had readibility concerns 👎</td>
+									<td>Single File Components 👍 </td>
+								</tr>
+								<tr>
+									<td>Intermingling JSX and JS code 👎 </td>
+							</table>
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							## Debugging
+							- They are both component based, so browser dev tools can be used 👍
+							- JSX is easier to debug natively, but Vue converts HTML to render function
+							so they are on the same level. 👍
 					</section>
 				</section>
 			</div>
