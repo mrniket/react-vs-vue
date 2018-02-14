@@ -30,6 +30,11 @@
 					# React vs Vue
 				</section>
 				<section data-markdown>
+					- Both component based systems
+					- Both have state management solutions
+					- React is purely a library, Vue is a more like a framework
+				</section>
+				<section data-markdown>
 					<script type="text/template">
 
 ## Criteria
@@ -49,13 +54,16 @@
 						<script type="text/template">
 							## What do we need to keep track of?
 
-							- Zoom level of code
-							- Is code running
-							- Is level completed
-							- Active screen (single-page routing)
-							- Toggles (console log, code hints, sound...)
-							- Player data (current health, score)
+							- Zoom level of code <!-- .element: class="fragment" data-fragment-index="1" -->
+							- Is code running <!-- .element: class="fragment" data-fragment-index="1" -->
+							- Is level completed <!-- .element: class="fragment" data-fragment-index="1" -->
+							- Active screen (single-page routing) <!-- .element: class="fragment" data-fragment-index="1" -->
+							- Toggles (console log, code hints, sound...) <!-- .element: class="fragment" data-fragment-index="1" -->
+							- Player data (current health, score) <!-- .element: class="fragment" data-fragment-index="1" -->
 						</script>
+					</section>
+					<section data-markdown>
+						## Unidirectional data flow
 					</section>
 					<section data-markdown>
 						## React ❤️ Redux
@@ -79,6 +87,7 @@
 						data-background-size="contain"
 						data-background-color="#FFFFFF">
 					</section>
+
 				</section>
 				<section>
 					<section data-markdown>
@@ -162,9 +171,10 @@
 						</script>
 					</section>
 
-					<section data-markdown
-									 data-background-size="contain"
-									 data-background-image="https://cdn-images-1.medium.com/max/800/1*vvRdTNyQNrDeAxBXzBbqQw.png">
+					<section
+						data-markdown
+						data-background-size="contain"
+						data-background-image="https://cdn-images-1.medium.com/max/800/1*vvRdTNyQNrDeAxBXzBbqQw.png">
 					</section>
 				</section>
 				<section>
@@ -174,75 +184,90 @@
 
 					<section data-markdown>
 						<script type="text/template">
-							- Easy to unit test <!-- .element: class="fragment" data-fragment-index="1" -->
-							- Low amount of boilerplate <!-- .element: class="fragment" data-fragment-index="2" -->
-							- Readable <!-- .element: class="fragment" data-fragment-index="3" -->
-							- Easy to debug <!-- .element: class="fragment" data-fragment-index="4" -->
+							- Readable <!-- .element: class="fragment" data-fragment-index="1" -->
+							- Easy to unit test <!-- .element: class="fragment" data-fragment-index="2" -->
+							- Easy to debug <!-- .element: class="fragment" data-fragment-index="3" -->
 						</script>
 					</section>
 
 					<section data-markdown>
-						<script type="text/template">
-							## Vue Unit Testing
-							It's difficult to set up and unit test Vue. Because of its: <!-- .element: class="fragment" data-fragment-index="1" -->
-							- webpack configuration (especially if custom, such as when using a CLI) <!-- .element: class="fragment" data-fragment-index="2" -->
-							- dependancy injection (using ES6) <!-- .element: class="fragment" data-fragment-index="3" -->
-							- lack of information online <!-- .element: class="fragment" data-fragment-index="4" -->
-
-							There are many packages trying to overcome this on GitHub, but are <!-- .element: class="fragment" data-fragment-index="5" -->
-							still in the very early stages and they don't do it well.
-						</script>
+						## Readability
 					</section>
 
 					<section data-markdown>
 						<script type="text/template">
-							## React Unit Testing  <!-- .element: class="fragment" data-fragment-index="1" -->
-							React on the other hand: <!-- .element: class="fragment" data-fragment-index="1" -->
-							- has a lot of mature testing libraries, such as <!-- .element: class="fragment" data-fragment-index="3" -->  <font color="gold">Enzyme</font> <!-- .element: class="fragment" data-fragment-index="3" --> or <!-- .element: class="fragment" data-fragment-index="3" --> <font color="gold">Jest</font> <!-- .element: class="fragment" data-fragment-index="2" -->
-							- 'acceptance' testing is easy against a real DOM <!-- .element: class="fragment" data-fragment-index="4" -->
-						</script>
-					</section>
-
-					<section data-markdown>
-						<script type="text/template">
-							## Boilerplates
-							Both have boilerplates ready to use. React has: <!-- .element: class="fragment" data-fragment-index="1" -->
-							- react-boilerplate <!-- .element: class="fragment" data-fragment-index="2" -->
-
-							And from Vue: <!-- .element: class="fragment" data-fragment-index="3" -->
-							- vue-simple-boilerplate, webpack, webpack-simple, browserify, etc. <!-- .element: class="fragment" data-fragment-index="4" -->
-
-							There can be less boilerplating in Vue... <!-- .element: class="fragment" data-fragment-index="4" -->
-
-							But it seems to have a massive effect on Vue's testing <!-- .element: class="fragment" data-fragment-index="5" -->
-							capability , while it doesn't affect React.
-						</script>
-					</section>
-
-					<section data-markdown>
-						<script type="text/template">
-							## Readability
+							### React
 							<table>
 								<tr>
-									<th style="text-align: center">React</th>
-									<th style="text-align: center">Vue</th>
+									<th style="text-align: center">👍</th>
+									<th style="text-align: center">👎</th>
 								</tr>
 								<tr>
-									<td>JSX always had readibility concerns 👎</td>
-									<td>Single File Components 👍 </td>
+									<td>JSX is nice on the eyes</td>
+									<td>Intermingling JSX and JS code</td>
 								</tr>
 								<tr>
-									<td>Intermingling JSX and JS code 👎 </td>
+									<td>Intermingling JSX and JS code</td>
+									<td></td>
+								</tr>
+							</table>
+
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							### Vue
+							<table>
+								<tr>
+									<th style="text-align: center">👍</th>
+									<th style="text-align: center">👎</th>
+								</tr>
+								<tr>
+									<td>Single File Components</td>
+									<td>Lots of flexibility can lead to confusion</td>
+								</tr>
+								<tr>
+									<td>Templates might be easier to understand for newer developers</td>
+									<td></td>
+								</tr>
 							</table>
 						</script>
 					</section>
 
 					<section data-markdown>
 						<script type="text/template">
+							## Boilerplate
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							## Vue Unit Testing
+							- Official unit testing framework <!-- .element: class="fragment" data-fragment-index="1" -->
+							- Need to use mixins for dependency injection <!-- .element: class="fragment" data-fragment-index="2" -->
+							- Official unit testing framework not mature <!-- .element: class="fragment" data-fragment-index="3" -->
+							- Lack of consensus in the community <!-- .element: class="fragment" data-fragment-index="4" -->
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							## React Unit Testing  <!-- .element: class="fragment" data-fragment-index="1" -->
+							- Has mature libraries for testing specifically in React: <!-- .element: class="fragment" data-fragment-index="3" -->  <font color="gold">Enzyme</font> <!-- .element: class="fragment" data-fragment-index="3" --> and <!-- .element: class="fragment" data-fragment-index="3" --> <font color="gold">Jest</font> <!-- .element: class="fragment" data-fragment-index="2" -->
+							- Lots of content online for testing in React <!-- .element: class="fragment" data-fragment-index="4" -->
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
 							## Debugging
-							- They are both component based, so browser dev tools can be used 👍
+							- They are both component based 👍
+							- Both have very good browser dev tools 👍
 							- JSX is easier to debug natively, but Vue converts HTML to render function
 							so they are on the same level. 👍
+							- Not descriptive runtime errors in templates in Vue 👎
+						</script>
 					</section>
 				</section>
 			</div>
